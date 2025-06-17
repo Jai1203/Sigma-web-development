@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 45px;
+            margin: 36px;
+            box-shadow:inset 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .text-shadow {
+            font-size: 24px;
+            color: blue;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            outline: 1px solid rgba(119, 28, 28, 0.5);
+            border: 2px solid black;
+            outline-offset: 25px;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <p class="text-shadow">
+        This is a text with a shadow effect.
+    </p>
+</body>
+</html>

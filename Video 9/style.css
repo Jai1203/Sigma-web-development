@@ -1,0 +1,14 @@
+.red{
+    background-color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+#firstdiv{
+    background-color: rgb(59, 59, 158);
+    color: white;
+}
+#seconddiv{
+    background-color: rgb(59, 158, 59);
+    color: white;
+}

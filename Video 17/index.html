@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div {
+            color: blue;
+            font-size: 20px;
+            background-color: lightcyan;
+        }
+
+        .blue {
+            background-color: lightgreen;
+        }
+
+        #green {
+            background-color: lightcoral;
+        }
+
+        div>p {
+            color: red;
+            font-size: 20px;
+            background-color: lightblue;
+        }
+
+        div p {
+            color: darkblue;
+            font-size: 18px;
+            background-color: lightyellow;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      a:visited{
+            color: orange;
+        }
+        a:link {
+            color: green;
+        }
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        a:active {
+            color: purple;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+      }
+        p:first-child {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        i am huge
+    </div>
+    <div class="blue">
+        I am Jai Chadha and I am learning CSS.
+        <article>
+            <p>This is a paragraph inside the blue div.</p>
+        </article>
+    </div>
+    <div id="green">
+        CSS stands for Cascading Style Sheets and is used to style HTML elements.
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.bing.com">Go to Bing</a>
+    <a target="_blank" href="https://www.yahoo.com">Go to Yahoo</a>
+</body>
+
+</html>

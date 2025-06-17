@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .Box{
+            width: 200px;
+            height: 100vh;
+            border: 2px solid black;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .Container{
+            box-sizing: border-box;
+            width: 300px;
+            height: 80vh;
+            border: 2px solid black;
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .Container > div{
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid black;
+        }
+        .Container > div > div{
+            border: 2px solid red;
+            background-color: lightyellow;
+            width: 10%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            width: 100vmax; /*vw*/
+            /*height: 60vmin; /*vh*/
+            min-height: 80vh;
+            border: 2px solid black;
+            background-color: lightcoral;
+            padding: 30px;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="Box">
+ This is a box with a border.
+</div>    
+<div class="Container">
+    <div>This is a container with a border.</div>
+        <div>
+            This is a nested div inside the container.
+        </div>
+    </div>
+</div>
+<div class="mycont">
+    i am another container
+</div>
+</body>
+</html>
