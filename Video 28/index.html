@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Property</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
@@ -17,16 +17,68 @@
             width: 80vw;
             padding: 3px;
             margin: 3px;
+        }
 
+        .box1 {
+            background-color: red;
+            /*position: relative;
+            top: 5px;
+            left: 15px;
+            z-index: 1;*/
+            position: absolute;
+            top: 0;
+            left: 3px;
+        }
+
+        .box2 {
+            background-color: green;
+            /*position: absolute;
+            top: 20px;
+            right: 10px;
+            z-index: 2;*/
+        }
+
+        .box3 {
+            background-color: blue;
+            /*position: fixed;
+            bottom: 25px;
+            left: 25vw;
+            height: 111px;
+            z-index: 3;*/
+        }
+
+        .box4 {
+            background-color: yellow;
+           /*position: sticky;
+            top: 0;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+        }
+
+
+
+        .parent {
+            padding: 43px;
+            margin: 32px;
+            /*position: sticky;*/
+            /*transform: translate(0);*/
+            /*filter:invert(0);*/
+            perspective:0em;
+            border: 2px solid orange
         }
     </style>
 </head>
 
 <body>
-    <div class=" box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
 </body>
 
 </html>
